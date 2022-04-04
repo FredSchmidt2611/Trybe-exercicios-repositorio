@@ -1,0 +1,15 @@
+h3{
+    font-family: fantasy;
+}
+.fonte{
+    font-family: monospace;
+}
+body{
+    background-color: rgb(235, 231, 226);
+}
+#fonte1{
+    font-size: 18px;
+}
+#fonte2{
+    font-size: 17px;
+}
