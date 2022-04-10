@@ -39,3 +39,38 @@ switch(estadoCandidato){
 default:
     console.log("nao se aplica");
 }
+
+let umNumero=21;
+let outroNumero=47;
+if(umNumero>outroNumero){
+    console.log(umNumero);
+}else{
+    console.log(outroNumero);
+}
+
+
+let numero1=64;
+let numero2=96;
+let numero3=18;
+if(numero1>numero2 && numero1>numero3){
+    console.log(numero1);
+}else if(numero2>numero1 && numero2>numero3){
+    console.log(numero2);
+}else{
+    console.log(numero3);
+}
+
+const valor="negativo"
+switch (valor) {
+    case "positivo":
+    console.log("positive");
+    break;
+
+    case "negativo":
+    console.log("negative");
+    break;
+
+    default:
+    console.log("zero");
+
+}
