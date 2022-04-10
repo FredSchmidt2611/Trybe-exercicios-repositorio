@@ -22,3 +22,20 @@ if(weekday==="segunda-feira" || weekday==="terça-feira" || weekday==="quarta-fe
 }else{
     console.log("FINALMENTE, descanso merecido UwU");
 }
+
+let estadoCandidato="aprovado"
+switch(estadoCandidato){
+        case "aprovado":
+        console.log("Voce foi aprovado");
+        break
+
+        case "lista":
+        console.log("Voce esta na lista de espera");
+        break
+
+        case "reprovado":
+        console.log("Voce nao foi aprovado, tente novamete");
+        break
+default:
+    console.log("nao se aplica");
+}
