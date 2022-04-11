@@ -32,3 +32,15 @@ if (media1>20){
     console.log("valor menor ou igual a 20");
 }
 
+let numbers3=[5, 9, 3, 19, 70, 8, 100, 2, 35, 27]
+let numeroMaior=0;
+for(let index=0; index<numbers3.length; index += 1){
+    let numero=numbers3[index];
+    
+    if(numero>numeroMaior) {
+    numeroMaior=numero;
+    }
+    }
+    console.log(numeroMaior);
+
+    
