@@ -32,7 +32,17 @@
         let a = document.getElementById('elementoOndeVoceEsta').nextElementSibling
         //console.log(a);
         let p = document.getElementById('pai').lastChild.previousElementSibling.previousElementSibling
-        console.log(p);
+        //console.log(p);
+        let xx = document.getElementById('pai')
+        let quintoFilho = document.createElement('section')
+        quintoFilho.innerText = 'Quinto filho'
+        xx.appendChild(quintoFilho)
+        console.log(quintoFilho);
+        let yy = document.getElementById('elementoOndeVoceEsta')
+        let filhoONdeVcEsta = document.createElement("section")
+        filhoONdeVcEsta.innerText = "filho do onde vc esta"
+        yy.appendChild(filhoONdeVcEsta)
+        console.log(filhoONdeVcEsta);
       </script>
     
 </body>
