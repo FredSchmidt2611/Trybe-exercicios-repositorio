@@ -62,6 +62,17 @@
       x1.innerText = 'Exercício 5.2 - JavaScript DOM'
       criandoH1.appendChild(x1)
       console.log(criandoH1);
+      let x2 = document.createElement('main')
+      x2.className = "main-content"
+      criandoH1.appendChild(x2)
+      let x3 = document.getElementsByClassName("main-content")[0]
+      let y = document.createElement('section')
+      y.className = 'center-content'
+      x3.appendChild(y)
+      let x4 = document.getElementsByClassName('center-content')[0]
+      let y1 = document.createElement('p')
+      y1.innerText = "Fazendo o exercicio 5.2 no domingo a noite"
+      x4.appendChild(y1)
     </script>
   </body>
 </html>
