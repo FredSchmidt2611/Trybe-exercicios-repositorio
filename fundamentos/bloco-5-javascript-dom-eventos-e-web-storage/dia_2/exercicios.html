@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let criandoH1 = document.getElementsByTagName('body')[0]
+      let x1 = document.createElement('h1')
+      x1.innerText = 'Exercício 5.2 - JavaScript DOM'
+      criandoH1.appendChild(x1)
+      console.log(criandoH1);
+      let x2 = document.createElement('main')
+      x2.className = "main-content"
+      criandoH1.appendChild(x2)
+      let x3 = document.getElementsByClassName("main-content")[0]
+      let y = document.createElement('section')
+      y.className = 'center-content'
+      x3.appendChild(y)
+      let x4 = document.getElementsByClassName('center-content')[0]
+      let y1 = document.createElement('p')
+      y1.innerText = "Fazendo o exercicio 5.2 no domingo a noite"
+      x4.appendChild(y1)
+      y2 = document.createElement('section')
+      y2.className = 'left-content'
+      x3.appendChild(y2)
+      let y3 = document.createElement('section')
+      y3.className = 'right-content'
+      x3.appendChild(y3)
+      //let x5 = document.getElementsByClassName('left-content')[0]
+      //let y4 = document.createElement('nav')
+      //y4.innerHTML = '<img src='https://picsum.photos/200'>'
+      //y4.className = 'small-image'
+     // x5.appendChild(y4)
+    </script>
+  </body>
+</html>
