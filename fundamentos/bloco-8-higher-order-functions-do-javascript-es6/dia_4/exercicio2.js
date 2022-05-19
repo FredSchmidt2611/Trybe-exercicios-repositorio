@@ -75,6 +75,18 @@ function averageAge() {
   return idadesAutores / quantBooks;
 }
 
-console.log(averageAge());
+//console.log(averageAge());
 
+function longestNamedBook() {
+return books.reduce( (sum, book) => {
+ if (sum.name.length > book.name.length) {
+   return sum
+ }
+  return book
+})
+}
+
+
+
+console.log(longestNamedBook());
  
