@@ -65,6 +65,16 @@ const books = [
     return books.reduce( (acc, curr) => `${acc} ${curr.author.name},`, '' )}
   
 
-  console.log(reduceNames());
+//  console.log(reduceNames());
+
+  //const expectedResult = 43;
+
+function averageAge() {
+  const quantBooks = books.length;
+  const idadesAutores = books.reduce( (sum, book) => (sum + (book.releaseYear - book.author.birthYear)), 0);
+  return idadesAutores / quantBooks;
+}
+
+console.log(averageAge());
 
  
