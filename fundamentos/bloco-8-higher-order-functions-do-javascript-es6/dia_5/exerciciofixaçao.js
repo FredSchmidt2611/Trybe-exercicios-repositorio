@@ -34,4 +34,42 @@ const recombinacaoArray = [animal, bebida, comida] = newArray
 let numerosPares = [1, 3, 5, 6, 8, 10, 12];
 [,,, ...numerosPares] = numerosPares
 
-console.log(numerosPares); // [6, 8, 10, 12];
+//console.log(numerosPares); // [6, 8, 10, 12];
+
+const person = {
+  name: 'João',
+  lastName: 'Jr',
+  age: 34,
+};
+
+const { nationality1 = 'Brazilian' } = person;
+
+//console.log(nationality1);
+
+const getNationality = ({ firstName, nationality2 }) => `${firstName} is ${nationality2}`;
+
+const person1 = {
+  firstName: 'João',
+  lastName: 'Jr II',
+};
+
+const {nationality2 = 'Brazilian'} = person1;
+
+const otherPerson = {
+  firstName: 'Ivan',
+  lastName: 'Ivanovich',
+  nationality2: 'Russian',
+};
+//console.log(nationality2);
+console.log(getNationality(otherPerson)); // Ivan is Russian
+console.log(getNationality(person1));
+
+const getPosition = (latitude, longitude) => ({
+  latitude,
+  longitude});
+
+console.log(getPosition(-19.8157, -43.9542));
+
+const multiply = (number, value = 1) => number * value;
+
+console.log(multiply(8));
