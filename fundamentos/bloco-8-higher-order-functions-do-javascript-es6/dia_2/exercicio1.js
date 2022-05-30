@@ -61,6 +61,22 @@ const books = [
     },
   ];
 
+ //  1 - Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
+ /* const expectedResult = [
+  'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
+  'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
+  'Fundação - Ficção Científica - Isaac Asimov',
+  'Duna - Ficção Científica - Frank Herbert',
+  'A Coisa - Terror - Stephen King',
+  'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
+]; */
+
+function formatedBookNames(array) {
+  return array.map((element) => `${element.name} - ${element.genre} - ${element.author.name}`);
+}
+
+console.log(formatedBookNames(books));
+
   //1 - Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
   
   function authorBornIn1947() {
