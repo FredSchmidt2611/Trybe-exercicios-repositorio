@@ -11,4 +11,5 @@ class About extends React.Component {
     }
 }
 
+console.log(React.Component);
 export default About;
